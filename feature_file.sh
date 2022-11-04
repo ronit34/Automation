@@ -6,7 +6,7 @@ sleep 2
 
 behave Feature/tenant_user_creator.feature
 
-sleep 2
+sleep 10
 
 behave Feature/tuc_info_id_list_file.feature
 

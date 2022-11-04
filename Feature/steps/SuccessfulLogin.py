@@ -5,6 +5,7 @@ import time
 
 @then(u'Enter Right username "{username}" and password "{password}"')
 def enter_credentials(context, username, password):
+    time.sleep(3)
     context.driver.maximize_window()
     context.driver.find_element(By.ID, "email").send_keys(username)
     context.driver.find_element(By.ID, "password").send_keys(password)

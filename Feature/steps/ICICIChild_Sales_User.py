@@ -34,10 +34,10 @@ def enter_data(context):
                 tuc = context.driver.find_element(By.ID, element_id)
                 select = Select(tuc)
                 #28th Feb
-                select.select_by_value("2002")
+                select.select_by_value("2001")
 
             else:
-                button = context.driver.find_element_by_id("save_user")
+                button = context.driver.find_element(By.ID, "save_user")
                 context.driver.execute_script("arguments[0].click();", button)
 
         except NameError:
