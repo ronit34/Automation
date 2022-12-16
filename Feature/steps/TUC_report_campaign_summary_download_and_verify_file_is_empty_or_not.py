@@ -54,6 +54,15 @@ def step_impl(context):
     time.sleep(2)
     button = context.driver.find_element(By.XPATH, "//*[@id='report_download']/img")
     context.driver.execute_script("arguments[0].click();", button)
+    time.sleep(1)
+    button1 = context.driver.find_element(By.XPATH, "//*[@id='report_download']/img")
+    context.driver.execute_script("arguments[0].click();", button1)
+    time.sleep(1)
+    button2 = context.driver.find_element(By.XPATH, "//*[@id='report_download']/img")
+    context.driver.execute_script("arguments[0].click();", button2)
+    time.sleep(1)
+    button3 = context.driver.find_element(By.XPATH, "//*[@id='report_download']/img")
+    context.driver.execute_script("arguments[0].click();", button3)
 
 
 @then(u'Open downloaded file and verify empty or not')

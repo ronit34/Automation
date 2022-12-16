@@ -1,9 +1,9 @@
 import time
-from behave import *
 
 from selenium.webdriver.common.by import By
 
 
+from behave import *
 @then(u'Insert details with special element')
 def step_impl(context):
     time.sleep(1)

@@ -613,7 +613,7 @@ def step_impl(context):
 @then(u'click on Download Data')
 def campaigns(context):
     time.sleep(1)
-    button = context.driver.find_element_by_id("pills-download-data-tab")
+    button = context.driver.find_element(By.ID, "pills-download-data-tab")
     context.driver.execute_script("arguments[0].click();", button)
 
 @then(u'check  text of Download Data under report Request Time')
